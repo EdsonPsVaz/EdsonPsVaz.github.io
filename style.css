@@ -115,6 +115,10 @@ a { color: var(--azul); }
 .tags li { background: var(--fundo); border-radius: 6px; padding: 0.15rem 0.6rem; font-size: 0.95rem; }
 .nota { margin: 1rem 0 0 !important; font-size: 0.95rem; }
 
+
+.projeto .botao { align-self: flex-start; margin-top: 1rem; }
+.projeto .print { max-width: 100%; border: 1px solid var(--linha); border-radius: 8px; margin-bottom: 1rem; }
+
 /* ===== Contato e rodapé ===== */
 .contato p { max-width: 55ch; color: var(--texto-suave); }
 .contato .botoes { margin-top: 1.5rem; }
