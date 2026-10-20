@@ -1,0 +1,133 @@
+/* ===== Cores e fontes: mude aqui e a página inteira muda ===== */
+:root {
+  --fundo: #eef2f6;
+  --papel: #ffffff;
+  --texto: #15232f;
+  --texto-suave: #4b5c6b;
+  --azul: #1556c0;
+  --azul-escuro: #0f3f8f;
+  --ambar: #f5b335;
+  --linha: #d3dde7;
+  --titulo: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --corpo: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  background: var(--fundo);
+  color: var(--texto);
+  font-family: var(--corpo);
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+a { color: var(--azul); }
+:focus-visible { outline: 3px solid var(--ambar); outline-offset: 3px; }
+
+/* ===== Topo ===== */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 1.25rem clamp(1.25rem, 5vw, 4rem);
+}
+.marca { font-family: var(--titulo); font-weight: 800; font-size: 1.25rem; color: var(--texto); text-decoration: none; }
+.topo nav { display: flex; gap: 1.5rem; }
+.topo nav a { color: var(--texto-suave); text-decoration: none; font-weight: 600; }
+.topo nav a:hover { color: var(--azul); }
+
+/* ===== Hero ===== */
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+  padding: clamp(2rem, 6vw, 5rem) clamp(1.25rem, 5vw, 4rem);
+  max-width: 1150px;
+  margin: 0 auto;
+}
+.hero h1 {
+  font-family: var(--titulo);
+  font-weight: 800;
+  font-size: clamp(2rem, 4.6vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.25rem;
+}
+.hero-texto p { max-width: 55ch; color: var(--texto-suave); margin: 0 0 1.75rem; }
+
+/* ===== Botões ===== */
+.botoes { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.botao {
+  font: inherit;
+  font-weight: 600;
+  padding: 0.7rem 1.25rem;
+  border: 2px solid var(--azul);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--azul);
+  text-decoration: none;
+  cursor: pointer;
+}
+.botao:hover { background: var(--azul); color: #fff; }
+.botao-principal { background: var(--azul); color: #fff; }
+.botao-principal:hover { background: var(--azul-escuro); border-color: var(--azul-escuro); }
+
+/* ===== Cartão "chamado" (o destaque da página) ===== */
+.chamado {
+  background: var(--papel);
+  border: 2px solid var(--texto);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 8px 8px 0 var(--ambar);
+}
+.chamado-titulo { margin: 0; font-size: 0.95rem; color: var(--texto-suave); }
+.chamado-assunto { font-family: var(--titulo); font-weight: 600; font-size: 1.4rem; line-height: 1.25; margin: 0.25rem 0 1.25rem; }
+.chamado dl { margin: 0; }
+.chamado dl div { display: flex; justify-content: space-between; gap: 1rem; padding: 0.55rem 0; border-top: 1px solid var(--linha); }
+.chamado dt { color: var(--texto-suave); }
+.chamado dd { margin: 0; font-weight: 600; text-align: right; }
+.selo { background: var(--ambar); padding: 0.1rem 0.6rem; border-radius: 999px; font-size: 0.95rem; }
+
+/* ===== Seções ===== */
+.bloco { max-width: 1150px; margin: 0 auto; padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.25rem, 5vw, 4rem); border-top: 1px solid var(--linha); }
+.bloco h2 { font-family: var(--titulo); font-size: clamp(1.6rem, 3vw, 2.2rem); margin: 0 0 1.5rem; letter-spacing: -0.01em; }
+.bloco h3 { font-family: var(--titulo); font-size: 1.2rem; margin: 0 0 0.5rem; }
+
+.duas-colunas { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+.duas-colunas p { margin: 0; max-width: 60ch; }
+
+.habilidades { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2.5rem; }
+.habilidades ul { margin: 0; padding-left: 1.2rem; color: var(--texto-suave); }
+
+/* ===== Projetos ===== */
+.projetos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+.projeto { background: var(--papel); border: 1px solid var(--linha); border-radius: 12px; padding: 1.5rem; display: flex; flex-direction: column; }
+.projeto p { margin: 0 0 1rem; color: var(--texto-suave); }
+.projeto .status { font-size: 0.95rem; font-weight: 600; margin-bottom: 0.5rem; }
+.status-andamento { color: var(--azul); }
+.tags { list-style: none; padding: 0; margin: auto 0 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.tags li { background: var(--fundo); border-radius: 6px; padding: 0.15rem 0.6rem; font-size: 0.95rem; }
+.nota { margin: 1rem 0 0 !important; font-size: 0.95rem; }
+
+/* ===== Contato e rodapé ===== */
+.contato p { max-width: 55ch; color: var(--texto-suave); }
+.contato .botoes { margin-top: 1.5rem; }
+.aviso { min-height: 1.5rem; margin-top: 1rem; font-weight: 600; color: var(--azul); }
+.rodape { text-align: center; padding: 2rem 1rem 3rem; color: var(--texto-suave); font-size: 0.95rem; }
+.rodape p { margin: 0; }
+
+/* ===== Celular e tablet ===== */
+@media (max-width: 900px) {
+  .hero, .duas-colunas, .habilidades { grid-template-columns: 1fr; }
+  .projetos { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}

@@ -1,13 +1,122 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Edson Vaz | Portfólio</title>
+  <title>Edson Vaz | Técnico de TI e futuro dev Full Stack</title>
+  <meta name="description" content="Portfólio de Edson Vaz: suporte de TI no dia a dia, JavaScript, Python e Node.js nos projetos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Edson Vaz</h1>
-  <p>Técnico de TI em transição para desenvolvimento Full Stack.</p>
+
+  <header class="topo">
+    <a class="marca" href="#inicio">Edson Vaz</a>
+    <nav aria-label="Principal">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-texto">
+        <h1>Resolvo problemas de TI todo dia. Agora aprendo a construir o software que os resolve.</h1>
+        <p>Sou técnico de informática em Curitiba e estou virando desenvolvedor Full Stack. Estudo fazendo: cada passo vira um projeto publicado aqui.</p>
+        <div class="botoes">
+          <a class="botao botao-principal" href="#projetos">Ver projetos</a>
+          <a class="botao" href="https://github.com/EdsonPsVaz" target="_blank" rel="noopener">GitHub</a>
+          <a class="botao" href="https://www.linkedin.com/in/edson-vaz-b67425375" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <aside class="chamado" aria-label="Situação atual">
+        <p class="chamado-titulo">Chamado aberto</p>
+        <p class="chamado-assunto">Virar desenvolvedor Full Stack</p>
+        <dl>
+          <div><dt>Solicitante</dt><dd>Edson Vaz</dd></div>
+          <div><dt>Status</dt><dd><span class="selo">Em andamento</span></dd></div>
+          <div><dt>Etapa atual</dt><dd>Portfólio no GitHub</dd></div>
+          <div><dt>Próxima etapa</dt><dd>Jogo da memória em JavaScript</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section id="sobre" class="bloco">
+      <h2>Sobre mim</h2>
+      <div class="duas-colunas">
+        <p>Tenho 21 anos e trabalho com suporte de TI: cuido de computadores, redes e impressoras, e uso sistemas de gestão e cobrança no dia a dia. Antes disso, passei por faturamento em grande volume e por negociação com varejistas, então estou acostumado com prazo, número certo e gente do outro lado.</p>
+        <p>Programar entrou na minha rotina por um motivo prático: automatizar o que me toma tempo. Aprendo errando e corrigindo, e prefiro mostrar código funcionando a falar sobre ele.</p>
+      </div>
+
+      <div class="habilidades">
+        <div>
+          <h3>Uso no trabalho</h3>
+          <ul>
+            <li>Suporte e manutenção de computadores e redes</li>
+            <li>Sistemas de gestão, faturamento e cobrança</li>
+            <li>Power BI e pacote Office</li>
+            <li>WordPress</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Estou praticando</h3>
+          <ul>
+            <li>JavaScript, HTML e CSS</li>
+            <li>Python (já automatizei uma rotina)</li>
+            <li>Node.js, Express e JSON</li>
+            <li>Git, GitHub e inglês técnico</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos" class="bloco">
+      <h2>Projetos</h2>
+      <div class="projetos">
+        <article class="projeto">
+          <p class="status status-andamento">Em andamento</p>
+          <h3>Sistema de fichas para colônia de férias</h3>
+          <p>Resolve um problema real de trabalho: buscar o associado, escolher as semanas, cadastrar acompanhantes e calcular valores por tipo de reserva, com login por CPF e acesso de administrador.</p>
+          <ul class="tags"><li>Python</li><li>SQLite</li></ul>
+          <p class="nota">Código com dados fictícios será publicado aqui.</p>
+        </article>
+
+        <article class="projeto">
+          <p class="status">Próximo</p>
+          <h3>Jogo da memória</h3>
+          <p>Cartas que viram, pares que somem e mensagem de vitória. Serve para praticar lógica e manipulação da página com JavaScript.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+
+        <article class="projeto">
+          <p class="status">Em breve</p>
+          <h3>API de tarefas</h3>
+          <p>Lista de tarefas que se pode consultar, criar e apagar por uma API, com os dados guardados em JSON.</p>
+          <ul class="tags"><li>Node.js</li><li>Express</li><li>JSON</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="bloco contato">
+      <h2>Vamos conversar</h2>
+      <p>Procuro minha primeira oportunidade como desenvolvedor, de preferência remota. Se você tem uma vaga ou quer trocar uma ideia, escreva.</p>
+      <div class="botoes">
+        <a class="botao botao-principal" href="mailto:edson.vaz159@gmail.com">Enviar e-mail</a>
+        <button class="botao" id="copiar" type="button">Copiar e-mail</button>
+        <a class="botao" href="https://www.linkedin.com/in/edson-vaz-b67425375" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+      <p class="aviso" id="aviso" role="status"></p>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>© <span id="ano"></span> Edson Vaz. Feito à mão, um commit de cada vez.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
